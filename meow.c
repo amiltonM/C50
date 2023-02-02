@@ -1,0 +1,33 @@
+
+#meowing
+#counter=counter+1
+#counter+=1
+#counter++
+#solve meowing with a loop
+
+if counter=3;
+while(counter>0)
+{printf("meow\n");
+counter= counter-1}
+
+if i=3;
+while(i>0)
+{
+    printf("meow\n");
+    i-- # i-=1;
+}
+
+# no sentido de i crescente
+
+if i=0
+while(i<3)
+{
+    printf("meow\n")
+    i++
+}
+
+for(int i=0; i<3; i++)
+{
+    printf("meow\n");
+}
+#control c- for cancel de infinit loops 

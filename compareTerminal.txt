@@ -1,0 +1,3 @@
+code compare # cria o ficheiro
+make compare
+./compare
