@@ -1,0 +1,101 @@
+int main(void)
+{
+    //Get size of grid 
+    int n;
+    do
+    {
+        n=get_int("Size:");
+    }
+    while(n<1);
+    // Print grid of bricks
+    for(int i=0; i<n,i++)
+
+    {
+        for(j=0;j<n ;j++)
+        {   
+        printf("#");
+        }
+
+    printf("\n");
+    }
+}
+
+
+//o psecodigo pode ser construido pelos comentarios
+int main(void)
+{
+    //Get size of grid 
+    
+    // Print grid of bricks
+}
+////criar uma abstracao chamando funcoes
+
+   //Get size of grid 
+    int n=get_size("Size");
+    // Print grid of bricks
+    print_grid(n);
+}
+
+//permite criar a parte as funcoes
+int get_size(void)
+{
+    int n;
+    do
+    {
+        n=get_int("Size:")}
+    while(n<1);
+    return n;
+
+}
+
+void print_grid(int size)
+{
+    for(int i=0; i<size;i++)
+    {
+        for(int j=0; j<size;j++)
+        {
+        printf("#");
+        }
+    printf("/n");
+    }
+    
+}
+
+apartir da abstracao ate aqui temos uma questao de nao reconhecer temos que puxar as funcoes para cima mas podemos muito bem so chamar as funcoes.
+# include <cs50.h>
+# include <stdio.h>
+
+int get_size(void);
+void print_grid( int size);
+
+int main(void)
+{
+    //Get Size of grid
+    int n=get_size();
+    //print grid of bricks
+    print_grid(n);
+}
+
+int get_size(void)
+{
+    int n;
+    do
+    {
+        n=get_int("Size:")}
+    while(n<1);
+    return n;
+
+}
+
+void print_grid(int size)
+{
+    for(int i=0; i<size;i++)
+    {
+        for(int j=0; j<size;j++)
+        {
+        printf("#");
+        }
+    printf("/n");
+    }
+    
+}
